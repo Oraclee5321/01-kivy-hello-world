@@ -11,23 +11,15 @@ else:
 
 from kivy.app import App
 from kivy.uix.floatlayout import FloatLayout
-from kivy.uix.label import Label
-from kivy.graphics import Color, Rectangle
+
+class SimpleLayout(FloatLayout):
+    pass
 
 class SimpleApp(App):
     def build(self):
-        # Create the root widget
-        root = FloatLayout()
-
-        # Add a label with "Hello World"
-        label = Label(
-            text="Hello World",
-            font_size='30sp',
-            color=(100, 250, 100, 1)  # Purple color for text
-        )
-        root.add_widget(label)
-
-        return root
+        return SimpleLayout()
 
 if __name__ == "__main__":
     SimpleApp().run()
+
+    

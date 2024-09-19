@@ -20,7 +20,6 @@ class SimpleApp(App):
     def build(self):
         layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
         
-        
         self.instructions_label = Label(text='Enter your name')
         self.name_input = TextInput(text='', multiline=False)
         self.greet_button = Button(text='Greet')
@@ -40,3 +39,5 @@ class SimpleApp(App):
 
 if __name__ == '__main__':
     SimpleApp().run()
+
+    
