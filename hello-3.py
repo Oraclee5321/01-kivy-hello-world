@@ -15,7 +15,7 @@ from kivy.uix.floatlayout import FloatLayout
 class SimpleLayout(FloatLayout):
     pass
 
-class SimpleApp(App):
+class SimpleApp(App): # Uses the simple.kv file
     def build(self):
         return SimpleLayout()
 
